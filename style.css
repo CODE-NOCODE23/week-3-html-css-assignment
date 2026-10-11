@@ -1,0 +1,122 @@
+
+body {
+font-family: Arial, sans-serif;
+background-color: #f4f6fb;
+text-align: center;
+padding: 30px;
+color: #222;
+}
+
+
+h1 {
+color: #333;
+}
+
+.intro {
+color: #666;
+margin-bottom: 40px;
+}
+
+
+.pricing-container {
+display: flex;
+justify-content: center;
+align-items: stretch;
+gap: 20px;
+}
+
+
+.card {
+background-color: white;
+width: 250px;
+padding: 25px;
+border: 2px solid #ddd;
+border-radius: 12px;
+
+display: flex;
+flex-direction: column;
+
+position: relative;
+
+}
+
+
+.card h2 {
+color: #5145cd;
+margin-bottom: 10px;
+}
+
+.price {
+font-size: 22px;
+font-weight: bold;
+}
+
+
+.card ul {
+text-align: left;
+padding-left: 25px;
+line-height: 2;
+
+flex-grow: 1;
+
+}
+
+
+.button {
+display: block;
+background-color: #5145cd;
+color: white;
+padding: 12px;
+border-radius: 6px;
+cursor: pointer;
+margin-top: 15px;
+}
+
+
+.card input {
+display: none;
+}
+
+
+.popular {
+border: 2px solid #5145cd;
+}
+
+
+.badge {
+background-color: #5145cd;
+color: white;
+padding: 7px;
+border-radius: 5px;
+font-size: 12px;
+margin-bottom: 15px;
+}
+
+
+.card input:checked + .button {
+background-color: #222;
+}
+
+
+.card:has(input:checked) {
+border-color: #5145cd;
+box-shadow: 0 5px 15px #ddd;
+}
+
+
+@media (max-width: 800px) {
+.pricing-container {
+flex-direction: column;
+align-items: center;
+}
+
+.card {
+    width: 80%;
+    max-width: 300px;
+}
+
+body {
+    padding: 20px 10px;
+}
+
+}
